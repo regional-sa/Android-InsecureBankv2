@@ -2,7 +2,7 @@ version: 2
 
 updates:
   - package-ecosystem: "gradle"
-    directory: "/InsecureBankv2" # La ruta donde está el archivo build.gradle
+    directory: "/InsecureBankv2" 
     schedule:
       interval: weekly
       time: "12:00"
