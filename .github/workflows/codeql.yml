@@ -80,8 +80,9 @@ jobs:
     # to build your code.
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
-    - if: matrix.build-mode == 'manual'
-      shell: bash
+    - name: Build project (if manual build-mode)
+      if: matrix.build-mode == 'manual'
+      
       run: |
         cd InsecureBankv2
         chmod +x gradlew
